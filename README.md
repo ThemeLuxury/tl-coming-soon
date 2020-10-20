@@ -1,6 +1,3 @@
-## Description
-Coming Soon, Maintenance Mode and Under Construction plugin for WordPress.
-
 TL Coming Soon - Maintenance Mode & Under Construction plugin will help you create awesome Coming Soon, Maintenance Mode and Under Construction pages with all the necessary features like a premium version but it's completely free.
 
 With 15+ Templates available in many different categories, it will help you easily customize them the way you want. Additionally, responsive design is available and will adapt to any device.
