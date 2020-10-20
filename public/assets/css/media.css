@@ -1,0 +1,53 @@
+@media screen and (max-width: 1000px) {
+    .mainfeablock {
+        margin-bottom: 60px;
+    }
+    .mainfeablock:last-child {
+        margin-bottom: 0px;
+    }
+    .user {
+        margin-bottom: 30px;
+    }
+    .contacts .cont {
+        margin-bottom: 40px;
+    }
+    .contacts .cont:last-child {
+        margin-bottom: 0px;
+    }
+    .contform input {
+        margin-bottom: 30px;
+    }
+    .contform textarea {margin-top: 0px;}
+}
+
+@media screen and (max-width: 768px) {
+    #subscribeModal .subs {
+        width: auto;
+    }
+    #subscribeModal .subs h3 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    #subscribeModal .subs h3 span {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content-wrapper h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .section h2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content-wrapper h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
