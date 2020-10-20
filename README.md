@@ -11,7 +11,7 @@ You can set solid background color, gradient background color, image background,
 
 Easily change text, translate text on the TL Coming Soon settings page and use the built-in countdown, subscribe form, and more.
 
-# Features
+## Features
 - 15+ Templates available in many different categories: Forest, Cosmos, Particles, Polygonal, Cloud, 3D Box, Medical, Creative, Sport, Wedding, Restaurant, Pacman, Building, Seminar, App, and more.
 - Modern and fully Responsive.
 - Flexible and user-friendly setup.
@@ -30,7 +30,7 @@ Easily change text, translate text on the TL Coming Soon settings page and use t
 - GDPR ready.
 - [Online documentation](https://docs.themeluxury.com/tl-coming-soon/)
 
-# Support
+## Support
 If you have any problems, questions or recommendations about TL Coming Soon, don't think twice. Please open a ticket in the [official support forum](https://wordpress.org/support/plugin/tl-coming-soon/). We answer all questions within hours!
 
 Want to say "Thank You"? Please leave a [review](http://wordpress.org/support/view/plugin-reviews/tl-coming-soon?filter=5) to support us.
@@ -59,7 +59,7 @@ Want to say "Thank You"? Please leave a [review](http://wordpress.org/support/vi
 	<li>Activate, then open the plugin settings page located in the main WordPress Admin Menu under the name "Coming Soon"</li>
 </ol>
 
-# Frequently Asked Questions
+## Frequently Asked Questions
 
 <strong>What's the difference between TL Coming Soon?</strong>
 
