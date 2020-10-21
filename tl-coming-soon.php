@@ -35,8 +35,6 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'TL_COMING_SOON_VERSION', '1.0.0' );
 define('TL_COMING_SOON_DIR', trailingslashit(plugin_dir_path(__FILE__)));
 define('TL_COMING_SOON_URL', trailingslashit(plugin_dir_url(__FILE__)));
-
-define('TL_COMING_SOON_VIEWS', TL_COMING_SOON_DIR . trailingslashit('public'));
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-tl-coming-soon-activator.php
