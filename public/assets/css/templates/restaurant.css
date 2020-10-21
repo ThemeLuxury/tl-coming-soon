@@ -1,0 +1,549 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Montserrat:400,700); /*roboto, montserrat*/
+@import url(https://fonts.googleapis.com/css?family=Titan+One);
+
+* {
+  outline: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.modal-backdrop {
+  background-color: rgba(8, 30, 49, 0.98) !important;
+}
+.container {
+  width: 100% !important;
+}
+
+.modal-backdrop {
+  background-color: #00080e;
+}
+
+.modal-backdrop.in {
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+}
+
+.cbp-popup-lightbox {
+  z-index: 99999 !important;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Custom scroll bar
+ * -------------------------------------------------------------------------------
+**/
+::-webkit-scrollbar {
+  width: 3px; /* Width of the vertical scrollbar button */
+  height: 7px; /* Height of the horizontal scrollbar button */
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: block;
+  height: 0px; /* Height of the entiry vertical scrollbar */
+  width: 5px; /* Width of the entiry horizontal scrollbar */
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+  background-color: none; /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+  background-color: none; /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: none; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #b3d21b; /* Background of Thumb */
+  -webkit-border-radius: 3px; /* Border Radius of the Scrollbar */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #b3d21b; /* Background of Thumb */
+  -webkit-border-radius: 3px; /* Border Radius of the Scrollbar */
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  button
+ * -------------------------------------------------------------------------------
+**/
+.btnwhite {
+  border: 2px solid #ffffff;
+  padding: 12px 40px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0);
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.btnwhite:hover,
+.btnwhite:active,
+.btnwhite:focus {
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+  color: #010204;
+  text-decoration: none;
+  outline: none;
+  border-color: #ffffff;
+}
+
+.btndark {
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 12px 40px;
+  color: #000002;
+  background: rgb(179, 210, 27);
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.btndark:hover,
+.btndark:active,
+.btndark:focus {
+  background: none;
+  transition: 0.3s;
+  color: rgb(179, 210, 27);
+  text-decoration: none;
+  outline: none;
+  border: 2px solid rgb(179, 210, 27);
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Countdown
+ * -------------------------------------------------------------------------------
+**/
+#my-soon-counter .soon-reflection {
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff 25%, rgba(255, 255, 255, 0));
+}
+#my-soon-counter {
+  background-position: top;
+}
+#my-soon-counter {
+  color: #333333;
+  padding: 20px 0px;
+  text-align: left;
+}
+
+.soon-value {
+  font-family: "Titan One", cursive;
+  font-weight: 300;
+  color: #b3d21b;
+  font-size: 46px;
+}
+
+.soon-label {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Basic block
+ * -------------------------------------------------------------------------------
+**/
+.background-wrapper {
+  background: url("../../images/templates/restaurant.jpg");
+}
+
+.content-wrapper .button {
+  margin: 5px 22px 40px 0px;
+  display: inline-block;
+}
+
+.content-wrapper .logo {
+  text-align: center;
+  display: block;
+  margin: 0px 0px 30px;
+}
+
+.content-wrapper h1 {
+  text-align: left;
+  color: #ffffff;
+  font-family: "Titan One", cursive;
+  font-weight: 300;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+.content-wrapper span.descr {
+  display: block;
+  max-width: 800px;
+  margin: 0px 0px 24px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-family: roboto;
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 100;
+}
+
+.content-wrapper .container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content-wrapper ul.social {
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+
+.content-wrapper ul.social li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.content-wrapper ul.social li:first-child {
+  margin-left: 0px;
+}
+
+.content-wrapper ul.social li a {
+  background: rgba(255, 255, 255, 0);
+  width: 36px;
+  height: 36px;
+  display: block;
+  text-align: center;
+  padding: 4px;
+  border-radius: 40px;
+  border: 2px solid #eaeaea;
+  color: #ffffff;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+}
+
+.content-wrapper ul.social li a:hover {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #0d1c22;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+}
+
+.vcentr {
+  width: 100%;
+  text-align: left;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Modal notify popup
+ * -------------------------------------------------------------------------------
+**/
+#subscribeModal .subs {
+  background: #31181b;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  background-size: cover;
+  text-align: center;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  max-height: 500px;
+}
+
+#subscribeModal .subs .bordic {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  padding: 20px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#subscribeModal .subs h3 {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: 200;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 38px;
+}
+
+#subscribeModal .subs h3 i {
+  font-style: normal;
+  font-weight: 800;
+}
+
+#subscribeModal .subs h3 span {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: roboto;
+  display: block;
+  margin: 10px 0px 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+#subscribeModal .subs .input {
+  width: 70%;
+  text-align: left;
+  float: left;
+}
+
+#subscribeModal input {
+  width: 100%;
+  padding: 10px 20px 10px 50px;
+  border-radius: 2px;
+  border: 2px solid #ffffff;
+  height: 48px;
+  font-family: roboto;
+}
+
+.icomail i {
+  position: absolute;
+  top: 15px;
+  color: #777f87;
+  font-size: 17px;
+  left: 18px;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  More info
+ * -------------------------------------------------------------------------------
+**/
+.title {
+}
+
+.title h2 {
+  font-family: "Titan One", cursive;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 100;
+  margin: 0px 0px 40px;
+  position: relative;
+  color: #000000;
+}
+
+.inblock {
+  padding: 80px 0px 100px;
+}
+
+.content {
+}
+
+.content p {
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Main features
+ * -------------------------------------------------------------------------------
+**/
+.mainfeatures {
+  background: #07181b;
+  background-size: cover;
+}
+.mainfeablock {
+}
+
+.mainfeablock i {
+  color: rgb(7, 24, 27);
+  font-size: 24px;
+  border: 2px solid rgb(179, 210, 27);
+  width: 62px;
+  height: 62px;
+  padding-top: 16px;
+  border-radius: 100px;
+  display: block;
+  margin: 0px 0px;
+  text-align: center;
+  background: #b3d21b;
+}
+.mainfeablock h3 {
+  color: #ffffff;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.mainfeablock span {
+  display: block;
+  text-align: left;
+  font-family: roboto;
+  font-size: 18px;
+  padding: 0px 0px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio {
+  background: #f3f3f3;
+}
+.cbp-caption-zoom .cbp-caption-activeWrap {
+  background-color: rgba(61, 64, 81, 0.88) !important;
+}
+.cbp-l-caption-desc {
+  color: #fff !important;
+}
+.cbp-l-caption-title {
+  color: #fff !important;
+}
+
+.team {
+}
+.user {
+  border: 1px solid #efefef;
+  padding: 20px;
+  border-radius: 3px;
+}
+.user img {
+  width: 80px;
+  border-radius: 100px;
+  display: block;
+}
+.user h4 {
+  font-family: roboto;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 20px 0px 12px;
+}
+
+.user h4 span {
+  color: #888888;
+  text-transform: none;
+  display: block;
+  margin: 10px 0px;
+  font-size: 14px;
+}
+.user ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.user ul li {
+  list-style: none;
+  display: inline-block;
+}
+.user ul li a {
+  color: #292929;
+  background: #ffffff;
+  border: 2px solid #d8d8d8;
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-align: center;
+  padding: 4px;
+  border-radius: 27px;
+  transition: 0.3s;
+}
+.user ul li a:hover {
+  border-color: #b3d21b;
+  transition: 0.3s;
+  color: #ff6f42;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Contacts
+ * -------------------------------------------------------------------------------
+**/
+.contacts {
+  background: #07181b;
+  color: #ffffff;
+}
+.contacts h2 {
+  color: #ffffff;
+}
+.contacts .cont {
+}
+.contacts .cont i {
+  color: #ffffff;
+  font-size: 24px;
+  display: block;
+  margin: 0px 0px 16px;
+}
+.contacts .cont span {
+  display: block;
+  font-size: 17px;
+  font-family: roboto;
+  font-weight: 300;
+}
+
+.contform {
+}
+.contform input {
+  width: 100%;
+  height: 50px;
+  padding: 18px;
+  border: 2px solid #17181b;
+  border-radius: 3px;
+  color: #17181b;
+  font-family: roboto;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.contform textarea {
+  width: 100%;
+  height: 150px;
+  padding: 18px;
+  border: 2px solid #17181b;
+  border-radius: 3px;
+  color: #17181b;
+  font-family: roboto;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+.contform input:focus,
+.contform textarea:focus {
+  background: #f5f5f5;
+  border-color: #e6e6e6;
+  transition: 0.3s;
+}
+.contform button {
+  margin-top: 24px;
+  width: 100%;
+}
+.contform button:hover {
+  color: #272727;
+}

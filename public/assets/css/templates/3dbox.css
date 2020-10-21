@@ -1,0 +1,568 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+* {
+    outline: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 100% !important;
+}
+
+.modal-backdrop {
+    background-color: #00080E;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+.cbp-popup-lightbox {
+    z-index: 99999 !important;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Custom scroll bar
+ * -------------------------------------------------------------------------------
+**/
+::-webkit-scrollbar {
+    width: 3px;
+    /* Width of the vertical scrollbar button */
+    height: 7px;
+    /* Height of the horizontal scrollbar button */
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 0px;
+    /* Height of the entiry vertical scrollbar */
+    width: 5px;
+    /* Width of the entiry horizontal scrollbar */
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: none;
+    /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background-color: none;
+    /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: none;
+    /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #00A3FF;
+    /* Background of Thumb */
+    -webkit-border-radius: 3px;
+    /* Border Radius of the Scrollbar */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #00A3FF;
+    /* Background of Thumb */
+    -webkit-border-radius: 3px;
+    /* Border Radius of the Scrollbar */
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  button
+ * -------------------------------------------------------------------------------
+**/
+.btnwhite {
+    border: 2px solid #00A3FF;
+    padding: 12px 40px;
+    color: #FFFFFF;
+    background: #00A3FF;
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btnwhite:hover,
+.btnwhite:active,
+.btnwhite:focus {
+    background: none;
+    transition: 0.3s;
+    color: #292C2E;
+    text-decoration: none;
+    outline: none;
+}
+
+.btndark {
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 12px 40px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btndark:hover,
+.btndark:active,
+.btndark:focus {
+    background: none;
+    transition: 0.3s;
+    color: #282C2E;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Countdown
+ * -------------------------------------------------------------------------------
+**/
+#my-soon-counter .soon-reflection {
+    background-color: #fffaf3;
+    background-image: linear-gradient(#fffaf3 25%, rgba(255, 250, 243, 0));
+}
+
+#my-soon-counter {
+    background-position: top;
+}
+
+#my-soon-counter {
+    color: #6e6e6e;
+}
+
+#my-soon-counter .soon-label {
+    color: #0078ff;
+}
+
+#my-soon-counter {
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    margin-left: -15px;
+}
+
+#my-soon-counter .soon-matrix-dot[data-state='1'] {
+    background-color: #007cff;
+}
+
+#my-soon-counter .soon-matrix-dot[data-state='0'] {
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.soon-group-inner {
+    text-align: center;
+}
+
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Basic block
+ * -------------------------------------------------------------------------------
+**/
+.content-wrapper {
+    z-index: 2;
+    position: relative;
+}
+
+div canvas {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}
+
+.content-wrapper .button {
+    margin: 5px 22px 40px 0px;
+    display: inline-block;
+}
+
+.content-wrapper .logo {
+    text-align: center;
+    display: block;
+    margin: 0px 0px 30px;
+}
+
+.content-wrapper h1 {
+    text-align: left;
+    color: #292C2E;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.content-wrapper span.descr {
+    display: block;
+    max-width: 800px;
+    margin: 0px 0px 24px;
+    text-align: left;
+    color: rgb(46, 47, 47);
+    font-family: roboto;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.content-wrapper .container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.content-wrapper ul.social {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+}
+
+.content-wrapper ul.social li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.content-wrapper ul.social li:first-child {
+    margin-left: 0px;
+}
+
+.content-wrapper ul.social li a {
+    background: rgba(255, 255, 255, 0);
+    width: 36px;
+    height: 36px;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    border-radius: 40px;
+    border: 2px solid #2B2E2F;
+    color: #303030;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+}
+
+.content-wrapper ul.social li a:hover {
+    background: #2B2E2F;
+    border: 2px solid #2E2F2F;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.vcentr {
+    width: 100%;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Modal notify popup
+ * -------------------------------------------------------------------------------
+**/
+#subscribeModal .subs {
+    background: #00458f;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    max-height: 500px;
+}
+
+#subscribeModal .subs .bordic {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#subscribeModal .subs h3 {
+    font-family: montserrat;
+    color: #ffffff;
+    font-weight: 200;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 38px;
+}
+
+#subscribeModal .subs h3 i {
+    font-style: normal;
+    font-weight: 800;
+}
+
+#subscribeModal .subs h3 span {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: roboto;
+    display: block;
+    margin: 10px 0px 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+#subscribeModal .subs .input {
+    width: 70%;
+    text-align: left;
+    float: left;
+}
+
+#subscribeModal input {
+    width: 100%;
+    padding: 10px 20px 10px 50px;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    height: 48px;
+    font-family: roboto;
+}
+
+.icomail i {
+    position: absolute;
+    top: 15px;
+    color: #777f87;
+    font-size: 17px;
+    left: 18px;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  More info
+ * -------------------------------------------------------------------------------
+**/
+.title {}
+
+.title h2 {
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0px 0px 40px;
+    position: relative;
+}
+
+.inblock {
+    padding: 80px 0px;
+}
+
+.content {}
+
+.content p {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Main features
+ * -------------------------------------------------------------------------------
+**/
+.mainfeatures {
+    background: #191919;
+    background-size: cover;
+}
+
+.mainfeablock {}
+
+.mainfeablock i {
+    color: #ffffff;
+    font-size: 24px;
+    border: 2px solid #464646;
+    width: 62px;
+    height: 62px;
+    padding-top: 16px;
+    border-radius: 100px;
+    display: block;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.mainfeablock h3 {
+    color: #ffffff;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.mainfeablock span {
+    display: block;
+    text-align: left;
+    font-family: roboto;
+    font-size: 18px;
+    padding: 0px 0px;
+    color: #5A5A5A;
+}
+
+.portfolio {
+    background: #F3F3F3;
+}
+
+.team {}
+
+.user {
+    border: 1px solid #EFEFEF;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.user img {
+    width: 80px;
+    border-radius: 100px;
+    display: block;
+}
+
+.user h4 {
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 20px 0px 12px;
+}
+
+.user h4 span {
+    color: #888888;
+    text-transform: none;
+    display: block;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+.user ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.user ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.user ul li a {
+    color: #292929;
+    background: #FFFFFF;
+    border: 2px solid #D8D8D8;
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    border-radius: 27px;
+    transition: 0.3s;
+}
+
+.user ul li a:hover {
+    border-color: #292929;
+    transition: 0.3s;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Contacts
+ * -------------------------------------------------------------------------------
+**/
+.contacts {
+    background: #F3F3F3;
+}
+
+.contacts .cont {}
+
+.contacts .cont i {
+    color: #272727;
+    font-size: 24px;
+    display: block;
+    margin: 0px 0px 16px;
+}
+
+.contacts .cont span {
+    display: block;
+    font-size: 17px;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.contform {}
+
+.contform input {
+    width: 100%;
+    height: 50px;
+    padding: 18px;
+    border: 2px solid #17181B;
+    border-radius: 3px;
+    color: #17181b;
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.contform textarea {
+    width: 100%;
+    height: 150px;
+    padding: 18px;
+    border: 2px solid #17181B;
+    border-radius: 3px;
+    color: #17181b;
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.contform input:focus,
+.contform textarea:focus {
+    background: #F5F5F5;
+    border-color: #E6E6E6;
+    transition: 0.3s;
+}
+
+.contform button {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.contform button:hover {
+    color: #272727;
+}

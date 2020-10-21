@@ -1,0 +1,548 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Montserrat:400,700);
+
+* {
+    outline: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 100% !important;
+}
+
+.modal-backdrop {
+    background-color: #00080E;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+.cbp-popup-lightbox {z-index: 99999 !important;}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Custom scroll bar
+ * -------------------------------------------------------------------------------
+**/
+::-webkit-scrollbar {
+    width: 3px; /* Width of the vertical scrollbar button */
+    height: 7px; /* Height of the horizontal scrollbar button */
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 0px; /* Height of the entiry vertical scrollbar */
+    width: 5px; /* Width of the entiry horizontal scrollbar */
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: none; /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background-color: none; /* Background of the Scrollbar */
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: none; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: rgb(156, 52, 28); /* Background of Thumb */
+    -webkit-border-radius: 3px; /* Border Radius of the Scrollbar */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgb(156, 52, 28); /* Background of Thumb */
+    -webkit-border-radius: 3px; /* Border Radius of the Scrollbar */
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  button
+ * -------------------------------------------------------------------------------
+**/
+.btnwhite {
+    border: 2px solid #CCB197;
+    padding: 12px 40px;
+    color: #FFFFFF;
+    background: #CCB197;
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.btnwhite:hover, .btnwhite:active, .btnwhite:focus {
+    background: none;
+    transition: 0.3s;
+    color: #9C341C;
+    text-decoration: none;
+    outline: none;
+    border-color: #9c341c;
+}
+
+.btndark {
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 12px 40px;
+    color: #FFFFFF;
+    background: rgb(156, 52, 28);
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btndark:hover, .btndark:active, .btndark:focus {
+    background: none;
+    transition: 0.3s;
+    color: rgb(156, 52, 28);
+    text-decoration: none;
+    outline: none;
+    border: 2px solid rgb(156, 52, 28);
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Countdown
+ * -------------------------------------------------------------------------------
+**/
+#my-soon-counter {
+    text-align: left;
+}
+#my-soon-counter .soon-reflection {
+    background-color: #5fc6fd;
+    background-image: linear-gradient(#5fc6fd 25%, rgba(95, 198, 253, 0));
+}
+#my-soon-counter {
+    background-position: top;
+}
+#my-soon-counter {
+    color: #a0662d;
+    font-family: roboto;
+    font-size: 44px;
+    font-weight: 300;
+    padding: 10px 0px 30px;
+    margin-left: -5px;
+}
+
+#my-soon-counter .soon-separator {
+    color: #9c341c;
+}
+
+.soon[data-layout*=group] .soon-group-sub>.soon-group-inner {
+    margin: 0 .3125em;
+    border: 1px solid #CCB197;
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 26px;
+}
+
+.soon-matrix .soon-matrix-dot {
+    width: 4px !important;
+    height: 4px !important;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Basic block
+ * -------------------------------------------------------------------------------
+**/
+.background-wrapper {
+    background: url('../../images/templates/cloud.jpg');
+}
+.content-wrapper .button {
+    margin: 5px 22px 40px 0px;
+    display: inline-block;
+}
+
+.content-wrapper .logo {
+    text-align: center;
+    display: block;
+    margin: 0px 0px 30px;
+}
+
+.content-wrapper h1 {
+    text-align: left;
+    color: #9C341C;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 800;
+    font-size: 52px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.content-wrapper span.descr {
+    display: block;
+    max-width: 800px;
+    margin: 0px 0px 24px;
+    text-align: left;
+    color: rgb(115, 96, 76);
+    font-family: roboto;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.content-wrapper .container {
+	    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.content-wrapper ul.social {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+}
+
+.content-wrapper ul.social li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.content-wrapper ul.social li:first-child {
+    margin-left: 0px;
+}
+
+.content-wrapper ul.social li a {
+    background: rgba(255, 255, 255, 0);
+    width: 36px;
+    height: 36px;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    border-radius: 40px;
+    border: 2px solid #CCB197;
+    color: #CCB197;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+}
+
+.content-wrapper ul.social li a:hover {
+    background: #9C341C;
+    border: 2px solid #9C341C;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+}
+
+.vcentr {
+    width: 100%;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Modal notify popup
+ * -------------------------------------------------------------------------------
+**/
+#subscribeModal .subs {
+    background: #a5cd48;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    max-height: 500px;
+}
+
+#subscribeModal .subs .bordic {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#subscribeModal .subs h3 {
+    font-family: montserrat;
+    color: #ffffff;
+    font-weight: 200;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 38px;
+}
+
+#subscribeModal .subs h3 i {
+    font-style: normal;
+    font-weight: 800;
+}
+
+#subscribeModal .subs h3 span {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: roboto;
+    display: block;
+    margin: 10px 0px 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+#subscribeModal .subs .input {
+    width: 70%;
+    text-align: left;
+    float: left;
+}
+
+#subscribeModal input {
+    width: 100%;
+    padding: 10px 20px 10px 50px;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    height: 48px;
+    font-family: roboto;
+}
+
+.icomail i {
+    position: absolute;
+    top: 15px;
+    color: #777f87;
+    font-size: 17px;
+    left: 18px;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  More info
+ * -------------------------------------------------------------------------------
+**/
+.title {}
+
+.title h2 {
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0px 0px 40px;
+    position: relative;
+    letter-spacing: 10px;
+    color: #000000;
+}
+
+.inblock {
+    padding: 80px 0px 100px;
+}
+
+.content {}
+
+.content p {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Main features
+ * -------------------------------------------------------------------------------
+**/
+.mainfeatures {
+    background: rgb(156, 52, 28);
+    background-size: cover;
+}
+
+.mainfeablock {}
+
+.mainfeablock i {
+    color: #FFFFFF;
+    font-size: 24px;
+    border: 2px solid #EFEB7B;
+    width: 62px;
+    height: 62px;
+    padding-top: 16px;
+    border-radius: 100px;
+    display: block;
+    margin: 0px 0px;
+    text-align: center;
+}
+.mainfeablock h3 {
+    color: #ffffff;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.mainfeablock span {
+    display: block;
+    text-align: left;
+    font-family: roboto;
+    font-size: 18px;
+    padding: 0px 0px;
+    color: rgba(255, 255, 255, 0.44);
+}
+
+.portfolio {
+    background: #F3F3F3;
+}
+.cbp-caption-zoom .cbp-caption-activeWrap {
+    background-color: rgba(156, 52, 28, 0.91) !important;
+}
+
+.team {}
+.user {
+    border: 1px solid #EFEFEF;
+    padding: 20px;
+    border-radius: 3px;
+}
+.user img {
+    width: 80px;
+    border-radius: 100px;
+    display: block;
+}
+.user h4 {
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 20px 0px 12px;
+}
+
+.user h4 span {
+    color: #888888;
+    text-transform: none;
+    display: block;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.user ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.user ul li {
+    list-style: none;
+    display: inline-block;
+}
+.user ul li a {
+    color: #292929;
+    background: #FFFFFF;
+    border: 2px solid #D8D8D8;
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    border-radius: 27px;
+    transition:0.3s;
+}
+.user ul li a:hover {
+    border-color: #9C341C;
+    transition: 0.3s;
+    color: #9C341C;
+}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Contacts
+ * -------------------------------------------------------------------------------
+**/
+.contacts {
+    background: rgb(156, 52, 28);
+    color: #ffffff;
+}
+.contacts h2 {color: #ffffff;}
+.contacts .cont {}
+.contacts .cont i {
+    color: #ffffff;
+    font-size: 24px;
+    display: block;
+    margin: 0px 0px 16px;
+}
+.contacts .cont span {
+    display: block;
+    font-size: 17px;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.contform {}
+.contform input {
+    width: 100%;
+    height: 50px;
+    padding: 18px;
+    border: 2px solid #17181B;
+    border-radius: 3px;
+    color: #17181b;
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition:0.3s;
+}
+.contform textarea {
+    width: 100%;
+    height: 150px;
+    padding: 18px;
+    border: 2px solid #17181B;
+    border-radius: 3px;
+    color: #17181b;
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 30px;
+    transition:0.3s;
+}
+.contform input:focus, .contform textarea:focus {
+    background: #F5F5F5;
+    border-color: #E6E6E6;
+    transition:0.3s;
+}
+.contform button {
+    margin-top: 24px;
+    width: 100%;
+}
+.contform button:hover {color: #272727;}
+
+/**
+ * -------------------------------------------------------------------------------
+ *  Clouds
+ * -------------------------------------------------------------------------------
+**/
+#clouds {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cloud {
+    position: relative;
+}
