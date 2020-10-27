@@ -738,7 +738,7 @@ class TL_Coming_Soon_Public_Settings {
           <!-- End::subscribeModal -->
 
           <!-- jQuery core -->
-          <script src="<?php echo esc_url( plugins_url( 'public/assets/js/jquery.min.js', dirname(__FILE__) ) ); ?>"></script>
+          <script src="<?php echo esc_url( includes_url( '/js/jquery/jquery.js' ) ); ?>"></script>
           <!-- Popper core -->
           <script src="<?php echo esc_url( plugins_url( 'public/assets/js/popper.min.js', dirname(__FILE__) ) ); ?>"></script>
           <!-- Bootstrap core -->
