@@ -13,7 +13,7 @@
  * @package           TL_Coming_Soon
  *
  * @wordpress-plugin
- * Plugin Name:       TL Coming Soon
+ * Plugin Name:       TL Coming Soon - Maintenance Mode & Under Construction
  * Plugin URI:        https://wordpress.org/plugins/tl-coming-soon/
  * Description:       Coming Soon, Maintenance Mode and Under Construction plugin for WordPress.
  * Version:           1.0.0
