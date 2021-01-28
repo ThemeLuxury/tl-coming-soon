@@ -2,7 +2,7 @@
 Contributors: ThemeLuxury
 Tags: coming soon, maintenance mode, under construction, landing page, launch page, maintenance
 Requires at least: 4.0
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GPLv2 or later
