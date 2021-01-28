@@ -106,5 +106,9 @@ If you have any ideas to help us improve this plugin or simply report a bug? Ple
 20. Translation Settings Page
 
 == Changelog ==
+<h4>1.0.1 - Release Date: January 28, 2021</h4>
+<p>Added compatibility with WordPress 5.6</p>
+<p>Minor bug fixes.</p>
+
 <h4>1.0.0 - Release Date: October 5, 2020</h4>
 <p>Initial release.</p>
