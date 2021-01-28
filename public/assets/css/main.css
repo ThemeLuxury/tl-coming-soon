@@ -41,6 +41,10 @@
       padding-top: 60px;
 }
 
+.content-wrapper .logo {
+  max-width: 250px;
+}
+
 .background-video{
     position: fixed;
     top: 0;

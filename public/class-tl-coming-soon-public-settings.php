@@ -119,8 +119,8 @@ class TL_Coming_Soon_Public_Settings {
 
                   <style>
                     .background-overlay{
-                      background:<?php echo esc_url( get_option('tlcs_design_options')['background']['overlay']['solid_color'] ) ?>;
-                      opacity: <?php echo (isset( get_option('tlcs_design_options')['background']['overlay']['opacity'] ) ? get_option('tlcs_design_options')['background']['overlay']['opacity'] : 0 ) ?>;
+                      background:<?php echo (!empty( get_option('tlcs_design_options')['background']['overlay']['solid_color'] ) ? get_option('tlcs_design_options')['background']['overlay']['solid_color'] : '#000000' ) ?>;
+                      opacity: <?php echo (!empty( get_option('tlcs_design_options')['background']['overlay']['opacity'] ) ? get_option('tlcs_design_options')['background']['overlay']['opacity'] : 0.5 ) ?>;
                     }
                   </style>
 
