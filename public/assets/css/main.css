@@ -72,7 +72,6 @@
 }
 
 #subscribeModal .subs{
-
     /* min-height: 300px  !important; */
     height: auto !important;
     position: relative !important;
@@ -118,7 +117,18 @@
 .pushy-open-left .pushy {
     width: 70%;
 }
-              
+
+.footer-copyright{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    z-index: 10;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    color: white;
+} 
+
 .wpcf7-form-control-wrap input,
 .wpcf7-form-control-wrap textarea{
 	width: 100%;

@@ -677,6 +677,7 @@ class TL_Coming_Soon_Admin_Settings {
 				'title'             => 'This site is undergoing maintenance',
 				'headline'          => 'Coming Soon...',
 				'content'           => 'Site is currently under maintenance. We are working hard to give you the best experience and will be back shortly. Thank you for your patience!',
+				'footer'			=> 'Powered by WordPress | <a href="https://wordpress.org/plugins/tl-coming-soon">TL Coming Soon</a> Plugin by <a href="https://themeluxury.com">ThemeLuxury</a>',
 				'background'        => array(
 					'type'        => 'solid_color',
 					'solid_color' => '',
@@ -806,6 +807,16 @@ class TL_Coming_Soon_Admin_Settings {
 			'content',						        	// ID used to identify the field throughout the theme
 			__( 'Content', $this->plugin_slug ),		// The label to the left of the option interface element
 			array( $this, 'toggle_content_callback'),	// The name of the function responsible for rendering the option interface
+			'tlcs_design_options',	            			// The page on which this option will be displayed
+			'design_settings_section'
+     		// The name of the section to which this field belongs
+		);
+
+		// Footer
+		add_settings_field(
+			'footer',						        	// ID used to identify the field throughout the theme
+			__( 'Footer', $this->plugin_slug ),		// The label to the left of the option interface element
+			array( $this, 'toggle_footer_callback'),	// The name of the function responsible for rendering the option interface
 			'tlcs_design_options',	            			// The page on which this option will be displayed
 			'design_settings_section'
      		// The name of the section to which this field belongs
@@ -973,6 +984,22 @@ class TL_Coming_Soon_Admin_Settings {
         wp_editor(stripslashes( isset( $options['content'] ) ? $options['content'] : '' ), 'main_content', array(
 			'textarea_name'  => 'tlcs_design_options[content]',
 			'textarea_rows'  => 8,
+        ));
+
+	}
+
+	/**
+	 * -------------------------------------------------------------------------------
+	 *  Footer element
+	 * -------------------------------------------------------------------------------
+	**/
+	public function toggle_footer_callback($args) {
+
+		$options = get_option('tlcs_design_options');
+
+        wp_editor(stripslashes( isset( $options['footer'] ) ? $options['footer'] : '' ), 'main_footer', array(
+			'textarea_name'  => 'tlcs_design_options[footer]',
+			'textarea_rows'  => 4,
         ));
 
 	}

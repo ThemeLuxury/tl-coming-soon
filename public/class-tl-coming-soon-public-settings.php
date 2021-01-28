@@ -671,10 +671,21 @@ class TL_Coming_Soon_Public_Settings {
                   </div>
 
                 </div>
-
+  
               </div>
 
+              <?php if ( !empty( get_option('tlcs_design_options')['footer'] ) ): ?>
+                <div class="footer-copyright">
+                    Powered by WordPress | <a href="https://wordpress.org/plugins/tl-coming-soon">TL Coming Soon</a> Plugin by <a href="https://themeluxury.com">ThemeLuxury</a>
+                </div>
+              <?php else: ?>
+                <div class="footer-copyright">
+                   <?php echo get_option('tlcs_design_options')['footer']; ?>
+                </div>
+              <?php endif ?>
+
           </div>
+          <!-- End::content -->  
 
           <div class="background-wrapper"></div>
           <?php if ( get_option('tlcs_design_options')['background']['type'] == 'video' ) : ?>

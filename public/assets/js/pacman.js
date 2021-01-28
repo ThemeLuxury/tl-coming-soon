@@ -1284,7 +1284,7 @@ function cloneOverride (source) {
 //     return newObj;
 // };
 
-$(function(){
+jQuery(function(){
   var el = document.getElementById("pacman");
 
   if (Modernizr.canvas && Modernizr.localstorage &&

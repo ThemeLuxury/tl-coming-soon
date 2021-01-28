@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://themeluxury.com
- * @since             1.0.0
+ * @since             1.0.1
  * @package           TL_Coming_Soon
  *
  * @wordpress-plugin
  * Plugin Name:       TL Coming Soon - Maintenance Mode & Under Construction
  * Plugin URI:        https://wordpress.org/plugins/tl-coming-soon/
  * Description:       Coming Soon, Maintenance Mode and Under Construction plugin for WordPress.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            ThemeLuxury
  * Author URI:        https://themeluxury.com
  * License:           GPL-2.0+
@@ -32,9 +32,10 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'TL_COMING_SOON_VERSION', '1.0.0' );
+define( 'TL_COMING_SOON_VERSION', '1.0.1' );
 define('TL_COMING_SOON_DIR', trailingslashit(plugin_dir_path(__FILE__)));
 define('TL_COMING_SOON_URL', trailingslashit(plugin_dir_url(__FILE__)));
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-tl-coming-soon-activator.php
@@ -69,7 +70,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-tl-coming-soon.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    1.0.1
  */
 function run_tl_coming_soon() {
 

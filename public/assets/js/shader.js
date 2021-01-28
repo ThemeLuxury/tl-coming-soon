@@ -1,6 +1,6 @@
 var config = {};
 
-$(function() {
+jQuery(function($) {
 	
     var $body = $(document.body),
         $window = $(window);
