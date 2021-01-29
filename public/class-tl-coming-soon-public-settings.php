@@ -120,7 +120,7 @@ class TL_Coming_Soon_Public_Settings {
                   <style>
                     .background-overlay{
                       background:<?php echo (!empty( get_option('tlcs_design_options')['background']['overlay']['solid_color'] ) ? get_option('tlcs_design_options')['background']['overlay']['solid_color'] : '#000000' ) ?>;
-                      opacity: <?php echo (!empty( get_option('tlcs_design_options')['background']['overlay']['opacity'] ) ? get_option('tlcs_design_options')['background']['overlay']['opacity'] : 0.5 ) ?>;
+                      opacity: <?php echo (!empty( get_option('tlcs_design_options')['background']['overlay']['opacity'] ) ? get_option('tlcs_design_options')['background']['overlay']['opacity'] : 0.4 ) ?>;
                     }
                   </style>
 
@@ -136,6 +136,13 @@ class TL_Coming_Soon_Public_Settings {
                     }
                   </style>
 
+                <?php else: ?>
+                  <style>
+                    .background-overlay{
+                      background:#000000;
+                      opacity: 0.4;
+                    }
+                  </style>
                 <?php endif ?>
                 <!-- End::Solid and Gradient overlay type -->
 
